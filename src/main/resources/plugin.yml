@@ -1,0 +1,57 @@
+name: AltQuest
+version: 1.0
+author: The AltQuest Dev Team
+main: com.altquest.altquest.AltQuest
+description: The AltQuest Open Source Project
+commands:
+  clan:
+    description: "used for creating, joining, operating clans"
+    usage: "/clan <new|invite|kick|join|leave>"
+  land:
+    description: "Manage permissions for the land you're standing on"
+    usage: "/land <claim|transfer|permissions>"
+  transfer:
+    description: "Sends your BitQuest wallet balance to an external address of your own"
+    usage: "/transfer <amount> <bitcoin address, e-mail or username>"
+  ban:
+    description: "Adds player to the ban list"
+    usage: "/ban <player>"
+  unban:
+    description: "Removes player from the ban list"
+    usage: "/unban <player>"
+  banlist:
+    description: "Prints the list of banned players"
+    usage: "/banlist"
+  spectate:
+    description: "Allows moderators to spectate players' actions"
+    usage: "/spectate <player>"
+  mod:
+    description: "Utility to add/remove/list moderators"
+    usage: "/mod <add|remove|list>"
+  claim:
+    description: "Purchase land in the location where you stand"
+    usage: "/claim"
+  emergencystop:
+    description: "Stops the server cleanly in case of emergency"
+    usage: "/emergencystop [reason]"
+  emergencyrestart:
+    description: "Stops, then reloads the server cleanly in case of emergency"
+    usage: "/emergencyrestart [reason]"
+  killAllVillagers:
+    description: "Kills all the villagers"
+    usage: "/killAllVillagers"
+  faucet:
+    description: "Get testnet coins (development mode only)"
+    usage: "/faucet"
+  wallet:
+    description: "Displays your BitQuest wallet info"
+    usage: "/wallet"
+  currency:
+    description: "Change your currency"
+    usage: "/currency [currency]"
+  getcurrency:
+    description: "will display your current currency"
+    usage: "/getcurrency"
+  exrate:
+    description: "get exchange rate for X amount of crypto 1 to crypto 2"
+    usage: "/exrate [amount][crypto1][crypto2]"

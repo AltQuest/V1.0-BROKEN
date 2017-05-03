@@ -1,0 +1,19 @@
+spigot:
+  extends:
+    file: development.yml
+    service: spigot
+  container_name: altquest
+  environment:
+    - ALTQUEST_ENV=development
+    - BLOCKCHAIN=btc/main
+  build: .
+  volumes:
+    - "./build/libs/:/spigot/plugins"
+    - ".:/altquest"
+  ports:
+    - "25565:25565"
+  links:
+    - redis
+  command: java -jar spigot.jar
+redis:
+  image: redis

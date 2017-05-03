@@ -1,0 +1,7 @@
+superuser: null
+# commented until <walletAmount> gets a class getter
+#welcomeMessage:
+#   <bold><yellow>Welcome to AltQuest, the server that runs on Altcoins! ^_^<reset>
+#
+#   <green>Your bank balance is: <walletAmount>
+#   <green>To cash out or add funds, log into: <blue><underline><link>xapo.com</link>
