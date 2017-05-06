@@ -338,18 +338,15 @@ if(!AltQuest.REDIS.exists("DOGE_address"+player.getUniqueId().toString())&&!AltQ
 
                 if(name1==null) name1="the wilderness";
                 if(name2==null) name2="the wilderness";
-
+		
+		if(altQuest.isPvP(event.getPlayer().getLocation())==true) { 
+			event.getPlayer().sendMessage(ChatColor.RED+"IN PVP ZONE");
+			}
                 if(!name1.equals(name2)) {
                     if(name2.equals("the wilderness")){
                         event.getPlayer().sendMessage(ChatColor.GRAY+"[ "+name2+" ]");
-				if(altQuest.isPvP(event.getPlayer().getLocation())==true)
-					{event.getPlayer().sendMessage(ChatColor.RED+"IN PVP ZONE");
-					}
                     }else{
                         event.getPlayer().sendMessage(ChatColor.YELLOW+"[ "+name2+" ]");
-				if(altQuest.isPvP(event.getPlayer().getLocation())==true)
-					{event.getPlayer().sendMessage(ChatColor.RED+"IN PVP ZONE");
-					}
                     }
                 }
             }
